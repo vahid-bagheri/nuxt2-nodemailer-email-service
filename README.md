@@ -1,68 +1,68 @@
-# nuxt2-nodemailer
+## Getting Started
 
-## Build Setup
+1. Clone the repository:
 
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+git clone https://github.com/vahid-bagheri/nuxt2-nodemailer-email-service.git
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+2. Install dependencies:
 
-## Special Directories
+```bash
+cd nuxt2-nodemailer-email-service
+yarn install
+```
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+3. Create a `.env` file in the root directory and add your SMTP server details:
 
-### `assets`
+```bash
+SMTP_SERVICE=gmail
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USERNAME=your-email@gmail.com
+SMTP_PASSWORD=your-password
+```
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+4. Start the development server:
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+```bash
+yarn dev
+```
 
-### `components`
+5. Access the application at `http://localhost:3000`.
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+## Usage
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+To use the email sending service, navigate to the `/` route. You will be presented with a form to fill out the email details:
 
-### `layouts`
+![Email Form](https://github.com/vahid-bagheri/nuxt2-nodemailer-email-service/blob/main/static/readme-form.png?raw=true)
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+Fill out the required fields and click the "Send Email" button. The email will be sent using Nodemailer.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+## Contributing
 
-### `pages`
+If you want to contribute to this project, please follow these guidelines:
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+1. Fork the repository.
+2. Create a new branch:
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+```bash
+git checkout -b my-feature-branch
+```
 
-### `plugins`
+3. Make your changes and commit them:
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+```bash
+git add .
+git commit -m "Add my feature"
+```
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+4. Push your branch to your fork:
 
-### `static`
+```bash
+git push -u origin my-feature-branch
+```
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+5. Create a pull request on the original repository.
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Thank you for your interest in contributing to this project!
