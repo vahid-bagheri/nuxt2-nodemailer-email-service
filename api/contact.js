@@ -18,7 +18,7 @@ app.post('/', function (req, res) {
 
   // Define validation functions
   const validateTo = () => validator.isEmail(to)
-  const validateSubject = () => true // TODO: Add validation for subject
+  const validateSubject = () => subject
   const validateName = () => name.length > 3
   const validateEmail = () => validator.isEmail(email)
   const validateMessage = () => message.length > 25
