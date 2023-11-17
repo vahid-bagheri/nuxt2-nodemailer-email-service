@@ -1,3 +1,5 @@
+**NOTE:** This is a demonstration of an email service built using Nuxt.js version 2 and Nodemailer. Please note that client-side validations are not applied in this demo. All validations are performed on the server-side using Nodemailer's built-in validation functions.
+
 ## Getting Started
 
 1. Clone the repository:
